@@ -1,7 +1,5 @@
 /* MAIN PROJECT CODE */
 html * {
-  /*   font-size: 1em; */
-  color: #212121 !important;
   font-family: "Trebuchet MS", Helvetica, sans-serif !important;
 }
 
@@ -16,35 +14,16 @@ footer {
   left: 0;
   bottom: 0;
   height: 130px;
-  background-color: #B6B6B6;
   text-align: center;
 }
-
-.jumbotron {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-
-.cuisine-journey {
-  background-image: url('../images/Pizza.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.cuisine-journey {
-  font-size: 1px;
-  margin-bottom: 0;
-}
-
 .circle {
   display:inline-block;
   margin:10px 0;
   width:115px;
   height:115px;
+  align-items: center;
   border-radius:115px;
-  background: #FF5722;
-
+  background: #fe5240;
 }
 
 .feature_img {
@@ -56,7 +35,152 @@ footer {
 }
 .discover-more {
   text-align: center;
-  background-color: black;
+  background-color: #555555;
+  opacity: 50;
   margin: 0 auto;
   width: 100%;
+  height: 40px;
+  padding-top: 8px;
+}
+
+.btn {
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  min-width: 180px;
+  max-width: 300px;
+  padding: 10px 6px;
+}
+
+.btn.red {
+  background-color: #fe5240;
+  color: #fff;
+}
+
+.navbar-brand.white {
+  color: #fff;
+  alignment: left;
+}
+
+.navbar-header {
+  width: 100%;
+  height: 50px;
+  background-color: #fe5240;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+}
+
+.top-part {
+  position: relative;
+  background-image: url(../images/pictures/Coffee-mug.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+.middle-part-text {
+  text-align: center;
+  max-width: 400px;
+  padding-bottom: 15px;
+}
+
+.top-part .discover-more {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 6%;
+  background-color: #000;
+  opacity: .7;
+  text-align: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.discovermore {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.bottom-part {
+  position: relative;
+  background-image: url(../images/pictures/Pizza.jpg);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-around;
+  /*-ms-flex-pack: distribute;*/
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.circle-text{
+  text-align: center;
 }
