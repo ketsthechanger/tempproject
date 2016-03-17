@@ -1,0 +1,62 @@
+/* MAIN PROJECT CODE */
+html * {
+  /*   font-size: 1em; */
+  color: #212121 !important;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.navbar {
+  background: #FF5722;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 130px;
+  background-color: #B6B6B6;
+  text-align: center;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+.cuisine-journey {
+  background-image: url('../images/Pizza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cuisine-journey {
+  font-size: 1px;
+  margin-bottom: 0;
+}
+
+.circle {
+  display:inline-block;
+  margin:10px 0;
+  width:115px;
+  height:115px;
+  border-radius:115px;
+  background: #FF5722;
+
+}
+
+.feature_img {
+  padding-top: 35px;
+}
+
+.feature_img_checker {
+  padding-top: 45px;
+}
+.discover-more {
+  text-align: center;
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+}
