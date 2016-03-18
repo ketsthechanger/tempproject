@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="FoodieJournal">
+<head>
+<meta charset="utf-8">
+<script src="../../bower_components/angular/angular.js"></script>
+<script src="./scripts/CulinaryController.js"></script>
+
+<body>
+
+<!-- http://jira.54.194.71.178.xip.io/browse/CTONE-15 - Using ng-repeat to display list of dishes using controller which gets the
+ data from JSON file-->
+<div ng-controller= "culinaryController"  class="accordion">
+	<div class="accordion-section" ng-repeat="dish in dishes">
+		<div class="accordion-title-bar">
+			<div class="circle-within"><span class="number">1</span></div><a href="#accordion-1" class="accordion-section-title">{{dish.Dishname}}</a>
+		</div>
+		<div id="accordion-1" class="accordion-section-content">
+			<div class="completed-info">
+				<div class="restaurant-container">
+					<p class="para1 semibold type6 black restaurant-name">{{dish.restaurant}}</p>
+					<div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+						<p class="para1 regular light-gray type6 reviews">{{dish.review_count}}</p>
+					</div>
+					<div class="price">
+						<p class="para1 regular light-gray type6 price-range">{{dish.price}}</p>
+					</div>
+					<div class="address">
+						<p class="para1 type6 regular black">{{dish.address}}</p>
+					</div>
+				</div>
+				<div class="main-square">
+					<div class="day-time">
+						<p class="para1 black type6 regular today">{{dish.open}}</p>
+					</div>
+					<p class="para1 green type6 light open-text">{{dish.status}}</p>
+					<div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">{{dish.phone}}</a></div>
+					<div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">{{dish.website}}</a></div>
+				</div>
+				<div class="breakpoint"></div>
+				<div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+					<div class="paragraph-text">
+						<blockquote></blockquote>
+						<p class="para1 black regular type6 img-paragraph">{{dish.top_review}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

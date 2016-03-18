@@ -1,0 +1,1 @@
+This font is copyrighted by The Seven Clans Media Corporation and is licenced free by the Creative Commons BY-SA license.
