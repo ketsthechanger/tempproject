@@ -1,5 +1,8 @@
 /**
- * Created by AOWPINS01_01 on 6/26/2015.
+ *  Consumer Key	    vzIlfhxusCyYRLjH4yPTgQ
+    Consumer Secret	    wEhKxnSkL8G6j-ScaSjc3vbIyPk
+    Token	            PtZwe2usX-711OcQXdl51QBp6DLRc9it
+    Token Secret	    7_EIrQ1O0s_QJJ3gtf9zPkzqFtc
  */
 
 angular
