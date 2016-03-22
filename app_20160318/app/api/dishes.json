@@ -1,0 +1,82 @@
+// http://jira.54.194.71.178.xip.io/browse/CTONE-16 - Implementing Stub in form of JSON file
+
+[
+  {
+    "Dishname": "All-American Bacon Cheese Burger",
+    "restaurant": "Frankie's",
+    "review_count":"1256 reviews",
+    "price":"$5 - $20",
+    "address": "66 Mint St., San Francisco, CA 94103",
+    "open": "Today 9:00 - 23:00",
+    "status": "Open now",
+    "phone": "(510) 653-3394",
+    "website":"frankiesburgers.com",
+    "image": "../images/Pizza.png",
+    "top_review": "One of the BEST American restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and..."
+  },
+  {
+    "Dishname": "Traditional American Desserts",
+    "restaurant": "Frankie's",
+    "reviews":"1260 reviews",
+    "price":"$5 - $20",
+    "address": "66 Mint St., San Francisco, CA 94103",
+    "open": "Today 9:00 - 23:00",
+    "status": "Open now",
+    "phone": "(510) 653-3394",
+    "website":"frankiesburgers.com",
+    "image": "../images/Apple_Pie.jpg",
+    "top_review": "The desserts are very tasty and especially the fruits in the dessert are fresh. The service is amazing and very spacious..."
+  },
+  {
+    "Dishname": "San Francisco Sordough bread",
+    "restaurant": "Frankie's",
+    "reviews":"1256 reviews",
+    "price":"$5 - $10",
+    "address": "66 Mint St., San Francisco, CA 94103",
+    "open": "Today 9:00 - 23:00",
+    "status": "Open now",
+    "phone": "(510) 653-3394",
+    "website":"frankiesburgers.com",
+    "image": "../images/Apple_Pie.jpg",
+    "top_review": "The bread is crispy and freshly baked. The service is quick and the hygiene is maintained in the restaurant..."
+  },
+  {
+    "Dishname": "New York style Buffalo wings",
+    "restaurant": "Frankie's",
+    "reviews":"1256 reviews",
+    "price":"$5 - $10",
+    "address": "66 Mint St., San Francisco, CA 94103",
+    "open": "Today 9:00 - 23:00",
+    "status": "Open now",
+    "phone": "(510) 653-3394",
+    "website":"frankiesburgers.com",
+    "image": "../images/Apple_Pie.jpg",
+    "top_review": "One of the BEST buffalo wings I have ever had!!!"
+  },
+  {
+    "Dishname": "Smoked barbecue ribs",
+    "restaurant": "Frankie's",
+    "reviews":"1256 reviews",
+    "price":"$15 - $30",
+    "address": "66 Mint St., San Francisco, CA 94103",
+    "open": "Today 9:00 - 23:00",
+    "status": "Open now",
+    "phone": "(510) 653-3394",
+    "website":"frankiesburgers.com",
+    "image": "../images/Apple_Pie.jpg",
+    "top_review": "One of the BEST barbecue ribs I have ever had. The barbecue sauce on top makes it more delicious!!!"
+  },
+  {
+    "Dishname": "Chicago style pizza",
+    "restaurant": "Frankie's",
+    "reviews":"1256 reviews",
+    "price":"$15 - $30",
+    "address": "66 Mint St., San Francisco, CA 94103",
+    "open": "Today 9:00 - 23:00",
+    "status": "Open now",
+    "phone": "(510) 653-3394",
+    "website":"frankiesburgers.com",
+    "image": "../images/Pizza.jpg",
+    "top_review": "Crunchy thin crust pizza with fresh veggies. Got extra cheese on top which was awesome!!!"
+  }
+]

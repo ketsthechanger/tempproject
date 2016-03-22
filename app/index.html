@@ -11,70 +11,96 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+    <!-- build:css(.tmp) styles/_old.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
   <body ng-app="group1CapstoneApp">
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">FoodieJournal</a>
-      </div>
+  <!--<nav class="navbar navbar-default">-->
+    <!--<div class="container-fluid">-->
+      <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+      <!--<div class="navbar-header">-->
+        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+          <!--<span class="sr-only">Toggle navigation</span>-->
+          <!--<span class="icon-bar"></span>-->
+          <!--<span class="icon-bar"></span>-->
+          <!--<span class="icon-bar"></span>-->
+        <!--</button>-->
+        <!--<a class="navbar-brand white" href="#">FoodieJournal</a>-->
+      <!--</div>-->
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+      <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
 
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
+      <!--</div>-->
+      <!--&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+  <!--</nav>-->
 
-  <div class="jumbotron">
-    <h1>Challenge Yourself</h1>
-    <p>FoodJournal makes it easy for you to embark on a journey to discover new cuisines</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a></p>
+  <!--<div class="top-part">-->
+    <!--<div class="middle-part-text">-->
+    <!--<h1>Challenge Yourself</h1>-->
+    <!--<p style="padding-bottom: 50px">FoodJournal makes it easy for you to embark on a journey to discover new cuisines</p>-->
+    <!--<p><a class="btn red btn-primary btn-lg" href="#" role="button">Get Started</a></p>-->
+    <!--</div>-->
+    <!--<div class="discover-more">-->
+      <!--<p class="discovermore white">Discover More</p>-->
+      <!--<img src="../images/icons/down-arrow.png" style="padding-left: 10px;">-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<div class="bottom-part">-->
+    <!--<div class="container">-->
+      <!--<div class="col-sm-4">-->
+        <!--<div class="circle circle-left">-->
+        <!--<img src="./images/Fork.png" class="img-responsive center-block feature_img">-->
+        <!--</div>-->
+        <!--<p>Explore the top 5 international cuisines and follow cuisine journeys.</p>-->
+      <!--</div>-->
+      <!--<div class="col-sm-4">-->
+        <!--<div class="circle circle-left">-->
+        <!--<img src="./images/Direction-sign.png" class="img-responsive center-block feature_img">-->
+        <!--</div>-->
+        <!--<div class="circle-text">-->
+        <!--<p>Receive restaurant recommendations based on your preferences and location.</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-sm-4">-->
+        <!--<div class="circle circle-left">-->
+        <!--<img src="./images/White-checkmark.png" class="img-responsive center-block feature_img_checker">-->
+        <!--</div>-->
+        <!--<div class="circle-text">-->
+        <!--<p>Complete challenges track your progress against your selected cuisines.</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <div class="container">
+    <div ng-view=""></div>
   </div>
-  <div class=" discover-more">
-    Discover More
-  </div>
 
-  <div class="jumbotron cuisine-journey">
-    <div class="container">
-      <div class="col-sm-4">
-        <div class="circle">
-        <img src="./images/Fork.png" alt="Restaurant choices" class="img-responsive center-block feature_img">
-        </div>
-        <div>
-        <p>Explore the top 5 international cuisines and follow cuisine journeys.</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="circle">
-        <img src="./images/Direction-sign.png" alt="..." class="img-responsive center-block feature_img">
-        </div>
-        <p>Receive restaurant recommendations based on your preferences and location.</p>
-      </div>
-      <div class="col-sm-4">
-        <div class="circle">
-        <img src="./images/White-checkmark.png" alt="..." class="img-responsive center-block feature_img_checker">
-        </div>
-        <p>Complete challenges track your progress against your selected cuisines.</p>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <p>Developed by Accenture</p>
-  </footer>
+  <!--<footer>-->
+    <!--<h4>Developed By</h4>-->
+    <!--<div>-->
+      <!--<img src="../images/icons/Aowp.png" class="src1">-->
+      <!--<img src="../images/icons/Accenture.png" class="src2">-->
+    <!--</div>-->
+  <!--</footer>-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+          (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+      }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -91,8 +117,6 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
 </body>
 </html>
