@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name group1CapstoneApp.controller:MainCtrl
+ * @name group1CapstoneApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the group1CapstoneApp
  */
 angular.module('group1CapstoneApp')
-  .controller('MainCtrl', function () {
+  .controller('listJourneysCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

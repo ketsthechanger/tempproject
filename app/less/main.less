@@ -1,31 +1,38 @@
+// Color variables
+@var1: #fe5240;
+@var2: #ffffff;
+
+// MAIN PROJECT CODE
 html * {
   font-family: "Trebuchet MS", Helvetica, sans-serif !important;
 }
+
 .navbar {
-  background: #fe5240;
+  background: @var1;
   width: 100%;
   margin-bottom: 0;
+  &-brand.white {
+    color: @var2;
+  }
+  &-header {
+    width: 100%;
+    height: 50px;
+    background-color: @var1;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+  }
 }
-.navbar-brand.white {
-  color: #ffffff;
-}
-.navbar-header {
-  width: 100%;
-  height: 50px;
-  background-color: #fe5240;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: justify;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-}
+
 footer {
   position: relative;
   left: 0;
@@ -33,27 +40,31 @@ footer {
   height: 130px;
   text-align: center;
 }
+
 .circle {
   display: inline-block;
   margin: 10px 0;
   width: 115px;
   height: 115px;
   border-radius: 115px;
-  background: #fe5240;
+  background: @var1;
   align-self: center;
+  // -ms-flex-pack: distribute;
+  &-text {
+    text-align: center;
+  }
+  &-left {
+    margin: 30%;
+  }
 }
-.circle-text {
-  text-align: center;
-}
-.circle-left {
-  margin: 30%;
-}
+
 .feature_img {
   padding-top: 35px;
+  &_checker {
+    padding-top: 45px;
+  }
 }
-.feature_img_checker {
-  padding-top: 45px;
-}
+
 .discover-more {
   text-align: center;
   background-color: #555555;
@@ -63,19 +74,21 @@ footer {
   height: 40px;
   padding-top: 8px;
 }
+
 .btn {
   border-radius: 0;
   border: 0;
-  color: #ffffff;
+  color: @var2;
   font-size: 20px;
   min-width: 180px;
   max-width: 300px;
   padding: 10px 6px;
+  &.red {
+    background-color: @var1;
+    color: #fff;
+  }
 }
-.btn.red {
-  background-color: #fe5240;
-  color: #fff;
-}
+
 .top-part {
   position: relative;
   background-image: url(../images/pictures/Coffee-mug.jpg);
@@ -98,33 +111,34 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  .discover-more {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    opacity: .7;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
-.top-part .discover-more {
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  height: 6%;
-  background-color: #000000;
-  text-align: center;
-  display: flex;
-  opacity: .7;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -134,15 +148,18 @@ h2 {
   -webkit-margin-end: 0px;
   font-weight: bold;
 }
+
 .middle-part-text {
   text-align: center;
   max-width: 400px;
   padding-bottom: 15px;
 }
+
 .discovermore.white {
   color: white;
   display: block;
 }
+
 .bottom-part {
   position: relative;
   background-image: url(../images/pictures/Pizza.jpg);
@@ -167,9 +184,12 @@ h2 {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
 .src1 {
   padding-top: 20px;
 }
+
 .src2 {
   margin-left: 20px;
 }
+

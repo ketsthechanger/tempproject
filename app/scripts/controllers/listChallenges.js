@@ -1,3 +1,6 @@
+/**
+ * Created by pratik.borde on 22/03/2016.
+ */
 'use strict';
 
 /**
@@ -8,7 +11,7 @@
  * Controller of the group1CapstoneApp
  */
 angular.module('group1CapstoneApp')
-  .controller('MainCtrl', function () {
+  .controller('listChallengesCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
