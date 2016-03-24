@@ -15,21 +15,27 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngStorage' //Tomo Add
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      //.when('/', {
-      //  templateUrl: 'views/listDishes.html',
-      //  controller: 'MainCtrl',
-      //  controllerAs: 'main'
-      //})
+    //.when('/', {
+    //  templateUrl: 'views/listDishes.html',
+    //  controller: 'MainCtrl',
+    //  controllerAs: 'main'
+    //})
+      .when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })//Tomo Add
       .when('/listJourneys', {
         templateUrl: 'views/listJourneys.html',
         controller: 'listJourneysCtrl',
         controllerAs: 'listJourneys'
       })
-      .when('/listDishes', {
+      .when('/listDishes/:journey', { //Tomo Modify--WHen you select "American" on journey list , ":journey"'s value will be "American"
         templateUrl: 'views/listDishes.html',
         controller: 'listDishesCtrl',
         controllerAs: 'listDishes'
